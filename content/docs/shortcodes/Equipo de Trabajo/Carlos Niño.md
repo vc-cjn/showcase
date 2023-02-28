@@ -1,5 +1,8 @@
-Carlos Augusto Niño Medina
+# Carlos Augusto Niño Medina
 
+## Ambiente profesional y laboral
+
+<div style="text-align:justify">
 Soy estudiante de Ingeniería de Sistemas y Computación, actualmente (2023-I) me encuentro en 9 semestre.
 
 Desde hace 2 años estoy laborando en mi área profesional, como desarrollador de software principalmente backend con tecnologías basadas en microservicios haciendo uso de Node, React, JavaScript, laravel, html, php entre otros; también desempeño funciones como  analista en bases de datos, particularmente SQL Server. La empresa en la que trabajo es un Outsourcing de Nómina por lo que también tuve que sumergirme y aprender a manejar todos los temas relacionados a los devengos y deducciones de un empleado, su seguridad social y todo lo que tiene que ver con su nómina.
@@ -8,7 +11,11 @@ Por otro lado, tengo gustos y conocimientos hacia la electrónica, me encanta tr
 
 Hace unos años estuve muy involucrado con temas de ciberseguridad, es otra de mis pasiones pero la he dejado a un lado por explorar otras cosas.  Aún sigo pensando si volvere a tocar estos temas!
 
+
+
+## Hobbies
+
 Entre mis hobbies se encuentran el ciclismo, es algo que me gusta practicar principalmente fuera de la ciudad, me agrada la sensación de visitar pueblos cercanos en bicicleta, también me agrada salir en motocicleta y conocer otros lugares un poco más lejanos, soy de los que prefiere una moto en lugar de un carro porque tiendo a marearme en estos últimos. Y finalmente, uno de mis hobbies que ya llevo practicando unos años es el trading, es algo de mucha disciplina y constancia, además de que se aprende a controlar emociones fuertes, para mi se ha convertido en algo como otra fuente de ingreso de una manera más divertida.
 
-
+</div>
 
