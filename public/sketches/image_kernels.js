@@ -1,14 +1,9 @@
-// Learning Processing
-// Daniel Shiffman
-// http://www.learningprocessing.com
 
-// Example 15-13: Sharpen with convolution
 
 var img;
 var w = 100;
 let matrix;
 var maxRange = 256
-// The convolution matrix for a "sharpen" effect stored as a 3 x 3 two-dimensional array.
 
 
 // La funcion preload se ejecuta una unica vez antes de iniciar la funcionalidad de la aplicacion

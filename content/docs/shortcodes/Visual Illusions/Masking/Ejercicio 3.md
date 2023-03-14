@@ -49,6 +49,16 @@ En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, 
 \end{pmatrix}
 {{< /katex >}}
 
+3. Blur
+
+{{< katex display  >}}
+\begin{pmatrix}
+&0.0625 &0.125 &0.0625\\
+&0.125 &0.25 &0.125\\
+&0.0625 &0.125 &0.0625 \\
+\end{pmatrix}
+{{< /katex >}}
+
 
 A continuación se toma una imagen del conocido jugador de futbol Vinicius Jr. para aplicarle los kernels. Es posible emplear el menú de selección para elegir que kernel se desea emplear sobre la imagen. Inicialmente, se muestra el kernel de Edge Detection.
 
@@ -59,6 +69,11 @@ A continuación se toma una imagen del conocido jugador de futbol Vinicius Jr. p
 Por otro lado, la aplicación desarrollada también tiene la posibilidad de realizar una representación del histograma de la imagen. Recordemos que un histograma de imagen es un tipo de histograma que da una representación visual de la distribución tonal dentro de la imagen. Es decir, una visualización gráfica del numero de pixeles para cada valor tonal. A continuación, el usuario puede seleccionar una de 3 imagenes para visualizar su histograma, incluyendo la imagen del jugador de futbol presentada previamente. 
 
 {{< p5-iframe sketch="/showcase/sketches/image_histogram.js" width="625" height="625" >}}
+
+### Image Lightness
+
+
+{{< p5-iframe sketch="/showcase/sketches/image_lightness.js">}}
 
 **3. Conclusiones**
 
