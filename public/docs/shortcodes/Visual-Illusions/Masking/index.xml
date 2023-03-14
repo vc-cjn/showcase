@@ -31,8 +31,8 @@
       
       <guid>https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Masking/Ejercicio-3/</guid>
       <description>Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen. Similar a aquellos que se pueden encontrar en aplicaciones como Photoshop o Gimp.</description>
+Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
+Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen.</description>
     </item>
     
   </channel>

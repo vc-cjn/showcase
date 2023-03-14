@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen. Similar a aquellos que se pueden encontrar en aplicaciones como Photoshop o Gimp.">
+Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
+Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
 <meta property="og:description" content="Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen. Similar a aquellos que se pueden encontrar en aplicaciones como Photoshop o Gimp." />
+Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
+Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Masking/Ejercicio-3/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-03-06T21:35:45-05:00" />
+<meta property="article:modified_time" content="2023-03-11T17:55:02-05:00" />
 <title>Ejercicio 3 | Showcase Template</title>
 <link rel="manifest" href="/showcase/manifest.json">
 <link rel="icon" href="/showcase/favicon.png" type="image/x-icon">
@@ -309,6 +309,17 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     
       
+        <li>
+          
+  
+  
+
+  
+    <a href="/showcase/docs/shortcodes/Visual-Illusions/Coloring/Ejercicio-1/" class="">Ejercicio 1</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -532,7 +543,12 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#ejercicio-3">Ejercicio 3</a></li>
+        <li><a href="#ejercicio-3">Ejercicio 3</a>
+          <ul>
+            <li><a href="#image-kernel-application">Image Kernel Application</a></li>
+            <li><a href="#image-histogram">Image Histogram</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
@@ -552,6 +568,10 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#ejercicio-3">#</a>
 </h2>
 <p>Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.</p>
+<h3 id="image-kernel-application">
+  Image Kernel Application
+  <a class="anchor" href="#image-kernel-application">#</a>
+</h3>
 <p>En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.</p>
 <p>Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen. Similar a aquellos que se pueden encontrar en aplicaciones como Photoshop o Gimp.</p>
 <p>Estos kernels tienen aplicaciones también en el campo del machine learning, en dónde su proposito involucra la extracción de features, en este contexto, es más común llamarlo convoluciones.</p>
@@ -626,6 +646,41 @@ https://github.com/alex-shpak/hugo-book
       "
 ></iframe>
 
+<h3 id="image-histogram">
+  Image Histogram
+  <a class="anchor" href="#image-histogram">#</a>
+</h3>
+<p>Por otro lado, la aplicación desarrollada también tiene la posibilidad de realizar una representación del histograma de la imagen. Recordemos que un histograma de imagen es un tipo de histograma que da una representación visual de la distribución tonal dentro de la imagen. Es decir, una visualización gráfica del numero de pixeles para cada valor tonal. A continuación, el usuario puede seleccionar una de 3 imagenes para visualizar su histograma, incluyendo la imagen del jugador de futbol presentada previamente.</p>
+
+
+
+
+
+
+
+
+<iframe
+  id="image_histogram"
+  style="width:625px; height:625px"
+  srcdoc="
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js></script>
+            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js></script>
+            
+            
+            
+            
+            
+            <script src=/showcase/sketches/image_histogram.js></script>
+          </head>
+          <body>
+          </body>
+        </html>
+      "
+></iframe>
+
 </article>
  
       
@@ -635,9 +690,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/visualcomputing/showcase/commit/b2befe197acf81801433788c165e0ca2cf963325" title='Last modified by Juan Esteban Oviedo | March 6, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/visualcomputing/showcase/commit/28c5b613768af28f68c12f87494a2bc34c759f94" title='Last modified by Juan Esteban Oviedo | March 11, 2023' target="_blank" rel="noopener">
       <img src="/showcase/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>March 6, 2023</span>
+      <span>March 11, 2023</span>
     </a>
   </div>
 
@@ -675,7 +730,12 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li>
       <ul>
-        <li><a href="#ejercicio-3">Ejercicio 3</a></li>
+        <li><a href="#ejercicio-3">Ejercicio 3</a>
+          <ul>
+            <li><a href="#image-kernel-application">Image Kernel Application</a></li>
+            <li><a href="#image-histogram">Image Histogram</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
