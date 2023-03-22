@@ -1,4 +1,4 @@
-let scaleFactor = 0.8; // Factor de escala para ajustar todos los elementos
+let scaleFactor = 0.7; // Factor de escala para ajustar todos los elementos
 let sounds = {};
 let colors = ["blue", "green", "red", "purple", "orange", "pink", "gray", "yellow"];
 let matrix = [];
