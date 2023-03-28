@@ -184,7 +184,8 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Coloring/Ejercicio-1/</guid>
-      <description>Ejercicio 1: Aplicación para ayudar a daltonicos#El daltonismo se define como la incapacidad de ver algunos colores en la forma normal. Ocurre cuando existe un problema con ciertas celulas nerviosas del ojo que perciben el color. Si solo falta un pigmento, la persona suele tener inconvenientes al momento de diferenciar entre el rojo y el verde, el cual es el tipo más común de daltonismo. En la mayoría de los casos, esta condición se debe a un problema genético.</description>
+      <description>Ejercicio 1: Aplicación para ayudar a daltonicos#1. Introducción
+El daltonismo se define como la incapacidad de ver algunos colores en la forma normal. Ocurre cuando existe un problema con ciertas celulas nerviosas del ojo que perciben el color. Si solo falta un pigmento, la persona suele tener inconvenientes al momento de diferenciar entre el rojo y el verde, el cual es el tipo más común de daltonismo. En la mayoría de los casos, esta condición se debe a un problema genético.</description>
     </item>
     
     <item>
@@ -211,7 +212,8 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Masking/Ejercicio-1/</guid>
-      <description>Ejercicio 1</description>
+      <description>Ejercicio 1#1. Introducción
+Kinegrama Acústico, así le hemos llamado a este ejercicio que explora la interacción entre el sonido y la visualización en tiempo real, inspirado en la técnica de los kinegramas y el proyecto WaveGAN. A través de una interfaz gráfica, el usuario puede manipular y generar patrones de sonido, que se traducen en una experiencia audiovisual. Este ejercicio aborda el concepto de kinegramas, su aplicación en diferentes contextos, la relación con el proyecto WaveGAN y la importancia de la interacción entre la visualización y el sonido.</description>
     </item>
     
     <item>
@@ -229,9 +231,9 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Masking/Ejercicio-3/</guid>
-      <description>Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen.</description>
+      <description>Ejercicio 3#1. Introducción
+Los kernels de imagen son una herramienta importante en el procesamiento de imágenes. Los kernels son matrices de valores numéricos que se utilizan para aplicar filtros a las imágenes y extraer características específicas de ellas.
+El uso de kernels de imagen es muy común en aplicaciones de visión por computadora, como el reconocimiento de objetos, la detección de bordes, la eliminación de ruido y la mejora de la calidad de las imágenes.</description>
     </item>
     
     <item>
@@ -240,9 +242,9 @@ Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Spatial-Coherence/Ejercicio-1/</guid>
-      <description>Ejercicio 1#Dentro de este ejercicio, se busca crear un pixelador de videos. Para ello se busca comparar 2 estrategias con el proposito de establecer la que mejor se ajusta a la calidad de la imagen.
-Color Averaging En esta técnica, el color de cada pixel se determina en base al promedio de los colores que cubren cada sector de la imagen original.
-Spatial Coherence En esta técnica, el color de cada pixel está dado por un color arbitrario dentro del sector de la imagen original.</description>
+      <description>Ejercicio 1#1. Introducción
+Las técnicas de pixelado de imágenes y videos son herramientas muy utilizadas en el procesamiento de medios digitales. El pixelado, también conocido como &amp;ldquo;mosaicado&amp;rdquo;, se refiere al proceso de reducir la resolución de una imagen o video, lo que resulta en la pérdida de detalles y la creación de un efecto de &amp;ldquo;bloques&amp;rdquo; o &amp;ldquo;mosaicos&amp;rdquo; en la imagen o video.
+El pixelado se ha utilizado tradicionalmente para ocultar información en imágenes y videos, ya sea por motivos de privacidad o para proteger la propiedad intelectual.</description>
     </item>
     
   </channel>

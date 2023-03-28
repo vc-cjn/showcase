@@ -1,5 +1,3 @@
-
-
 var img;
 var w = 100;
 let matrix;
@@ -24,6 +22,7 @@ function setup() {
   sel.option('Edge Detection');
   sel.option('Ridge Detection');
   sel.option('Sharpen');
+  sel.option('Blur');
 
   // Estilo del selector 
   sel.style('font-size', '40px');
@@ -54,6 +53,13 @@ function mySelectEvent(){
     matrix = [  [0, -1, 0], 
                 [-1, 6, -1],
                 [0, -1, 0] ];
+   
+    return matrix; 
+  }
+  if (item == 'Blur'){
+    matrix = [[0.0625, 0.125, 0.0625],
+              [0.125, 0.25, 0.125],
+              [0.0625, 0.125, 0.0625], ];
    
     return matrix; 
   }

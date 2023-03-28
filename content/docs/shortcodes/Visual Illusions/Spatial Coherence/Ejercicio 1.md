@@ -15,19 +15,20 @@ Dentro de este ejercicio, se busca crear un pixelador de videos. Para ello se bu
 
 **2.1. Color Averaging**
 
-En esta técnica, el color de cada pixel se determina en base al promedio de los colores que cubren cada sector de la imagen original. 
+El promedio de color es un proceso de computación visual que consiste en calcular el color promedio de un conjunto de píxeles en una imagen o video. Esta técnica se usa a menudo para reducir el ruido u otras variaciones no deseadas en una imagen al suavizar los valores de píxeles en una región local. El promedio de color funciona tomando el valor promedio de cada canal de color (por ejemplo, rojo, verde, azul) para todos los píxeles dentro de una región específica y asignando ese valor promedio a un píxel central dentro de esa región. Este proceso se puede repetir en una imagen o video completo para crear una apariencia más suave y consistente. El promedio de color se usa comúnmente en tareas como el filtrado de imágenes, la corrección de color y la mejora de imágenes. Sin embargo, también puede resultar en la pérdida de detalles o nitidez en una imagen, particularmente en áreas con alto contraste o textura fina, por lo que debe usarse con prudencia y teniendo en cuenta la aplicación específica. En esta técnica, el color de cada pixel se determina en base al promedio de los colores que cubren cada sector de la imagen original. 
 
 {{< p5-iframe sketch="/showcase/sketches/video_px_cavg.js" width="825" height="425">}}
 
 **2.2. Spatial Coherence**
 
-En esta técnica, el color de cada pixel está dado por un color arbitrario dentro del sector de la imagen original. 
+En computación visual, la coherencia espacial se refiere al grado en que los píxeles vecinos en una imagen o video tienen valores o características similares. Las imágenes con alta coherencia espacial tienen una apariencia uniforme y continua, con poca variación en los valores de píxeles dentro de las regiones locales. Esta propiedad puede ser útil en tareas de procesamiento de imágenes como la detección de bordes y la segmentación, donde a menudo es deseable identificar áreas de una imagen que son similares o están conectadas de alguna manera. Por el contrario, las imágenes con coherencia espacial baja tienen una apariencia más aleatoria y ruidosa, con un alto grado de variación en los valores de píxeles dentro de las regiones locales. Esta propiedad puede ser útil en aplicaciones como la síntesis de texturas y la generación de procedimientos, donde se desea una apariencia más aleatoria. En general, la coherencia espacial es un concepto importante en la computación visual que juega un papel clave en muchas tareas de procesamiento de imágenes y videos. En esta técnica, el color de cada pixel está dado por un color arbitrario dentro del sector de la imagen original. 
 
 
 {{< p5-iframe sketch="/showcase/sketches/video_px_scoh.js" width="825" height="425">}}
 
 
 **3. Conclusiones**
+
 Luego de este analisis, es lógico que surja la inquietud de cual de las dos alternativas puede llegar a ser mejor, y no solo eso, sino también la duda de como evaluar la calidad de la imagen resultante. 
 
 Existen dos formas para evaluar la calidad de la imagen resultante: Es posible partir de un analisis objetivo, como el que se ha planteado en el benchmarking, es decir, medir que tan distante está la imagen obtenida de la imagen original. 

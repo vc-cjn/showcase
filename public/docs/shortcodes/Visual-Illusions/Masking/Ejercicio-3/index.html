@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen.">
+<meta name="description" content="Ejercicio 3#1. Introducción
+Los kernels de imagen son una herramienta importante en el procesamiento de imágenes. Los kernels son matrices de valores numéricos que se utilizan para aplicar filtros a las imágenes y extraer características específicas de ellas.
+El uso de kernels de imagen es muy común en aplicaciones de visión por computadora, como el reconocimiento de objetos, la detección de bordes, la eliminación de ruido y la mejora de la calidad de las imágenes.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="Ejercicio 3#Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.
-Image Kernel Application#En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.
-Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen." />
+<meta property="og:description" content="Ejercicio 3#1. Introducción
+Los kernels de imagen son una herramienta importante en el procesamiento de imágenes. Los kernels son matrices de valores numéricos que se utilizan para aplicar filtros a las imágenes y extraer características específicas de ellas.
+El uso de kernels de imagen es muy común en aplicaciones de visión por computadora, como el reconocimiento de objetos, la detección de bordes, la eliminación de ruido y la mejora de la calidad de las imágenes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vc-cjn.github.io/showcase/docs/shortcodes/Visual-Illusions/Masking/Ejercicio-3/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-03-11T17:55:02-05:00" />
+<meta property="article:modified_time" content="2023-03-14T18:35:50-05:00" />
 <title>Ejercicio 3 | Showcase Template</title>
 <link rel="manifest" href="/showcase/manifest.json">
 <link rel="icon" href="/showcase/favicon.png" type="image/x-icon">
@@ -547,6 +547,7 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#image-kernel-application">Image Kernel Application</a></li>
             <li><a href="#image-histogram">Image Histogram</a></li>
+            <li><a href="#image-lightness">Image Lightness</a></li>
           </ul>
         </li>
       </ul>
@@ -567,15 +568,18 @@ https://github.com/alex-shpak/hugo-book
   Ejercicio 3
   <a class="anchor" href="#ejercicio-3">#</a>
 </h2>
+<p><strong>1. Introducción</strong></p>
+<p>Los kernels de imagen son una herramienta importante en el procesamiento de imágenes. Los kernels son matrices de valores numéricos que se utilizan para aplicar filtros a las imágenes y extraer características específicas de ellas.</p>
+<p>El uso de kernels de imagen es muy común en aplicaciones de visión por computadora, como el reconocimiento de objetos, la detección de bordes, la eliminación de ruido y la mejora de la calidad de las imágenes.</p>
+<p>Por ejemplo, un kernel de detección de bordes se puede utilizar para encontrar los bordes de un objeto en una imagen. El kernel se aplica a la imagen y busca los cambios abruptos en el brillo o el color de los píxeles. Esto puede ayudar a identificar las formas de los objetos en la imagen.</p>
+<p>Los kernels de imagen también se utilizan en el preprocesamiento de imágenes antes de aplicar algoritmos de aprendizaje automático, como las redes neuronales convolucionales. En este caso, los kernels se utilizan para extraer características importantes de las imágenes que se utilizarán como entrada para el modelo de aprendizaje automático.</p>
+<p><strong>2. Solución</strong></p>
 <p>Para el ejercicio propuesto se buscan aplicar kernels de imagen a una imagen dada. No solo esto, sino que también se quiere evaluar la generación de histogramas en base a la imagen.</p>
 <h3 id="image-kernel-application">
   Image Kernel Application
   <a class="anchor" href="#image-kernel-application">#</a>
 </h3>
-<p>En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels.</p>
-<p>Recordemos que un kernel es una pequeña matriz empleada para aplicar efectos a una imagen. Similar a aquellos que se pueden encontrar en aplicaciones como Photoshop o Gimp.</p>
-<p>Estos kernels tienen aplicaciones también en el campo del machine learning, en dónde su proposito involucra la extracción de features, en este contexto, es más común llamarlo convoluciones.</p>
-<p>Cada kernel tiene una matriz característica, la cual se presenta a continuación.</p>
+<p>En primer lugar se plantea la aplicación de kernels a la imagen. En este caso, se toman 3 kernels. Cada kernel tiene una matriz característica, la cual se presenta a continuación.</p>
 <ol>
 <li>Edge Detection</li>
 </ol>
@@ -612,6 +616,18 @@ https://github.com/alex-shpak/hugo-book
  &amp;0  &amp;-1  &amp;0\\ 
  &amp;-1  &amp;6  &amp;-1\\ 
  &amp;0  &amp;-1  &amp;0\\ 
+\end{pmatrix}\]
+</span>
+
+<ol start="3">
+<li>Blur</li>
+</ol>
+<span>
+  \[
+\begin{pmatrix}
+&amp;0.0625 &amp;0.125 &amp;0.0625\\
+&amp;0.125 &amp;0.25 &amp;0.125\\
+&amp;0.0625 &amp;0.125 &amp;0.0625 \\
 \end{pmatrix}\]
 </span>
 
@@ -681,6 +697,48 @@ https://github.com/alex-shpak/hugo-book
       "
 ></iframe>
 
+<h3 id="image-lightness">
+  Image Lightness
+  <a class="anchor" href="#image-lightness">#</a>
+</h3>
+<p>Para esta solución se plantea el escaneo de todos los pixeles empleando el arreglo pixels. Posteriormente, los valores de RGB existentes dentro de este arreglo se convierten a valores de HSL para luego transformar los valores únicamente del parametro L empleando el slider. Usando el slider se puede variar el parametro de lightness.</p>
+
+
+
+
+
+
+
+
+<iframe
+  id="image_lightness"
+  style="width:500px; height:450px"
+  srcdoc="
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js></script>
+            <script src=https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js></script>
+            
+            
+            
+            
+            
+            <script src=/showcase/sketches/image_lightness.js></script>
+          </head>
+          <body>
+          </body>
+        </html>
+      "
+></iframe>
+
+<p><strong>3. Conclusiones</strong></p>
+<p>Después de explorar el tema de los kernels de imagen, podemos concluir lo siguiente:</p>
+<p>Los kernels de imagen son una herramienta esencial en el procesamiento de imágenes y en la visión por computadora en general. Son matrices numéricas que se utilizan para aplicar filtros y extraer características específicas de las imágenes.</p>
+<p>Los kernels de imagen son ampliamente utilizados en diversas aplicaciones, desde el reconocimiento de objetos hasta la eliminación de ruido y la mejora de la calidad de las imágenes.</p>
+<p>Los kernels de imagen pueden ser ajustados para aplicar diferentes tipos de filtros y extraer diferentes características de las imágenes. Esto significa que su aplicación es altamente personalizable y puede ser adaptada para diferentes tipos de problemas.</p>
+<p>A futuro, se puede buscar la implementación de más kernels, con el propósito de aplicar filtros a las imágenes, como el filtro de desenfoque, el filtro de realce de bordes y el filtro de nitidez. Estos filtros pueden mejorar la calidad de la imagen y hacer que ciertas características sean más visibles.</p>
+<p>También es posible emplearlos para la compresión de imagenes como el estándar JPEG. En este caso, los kernels se utilizan para transformar la imagen original en una representación más compacta.</p>
 </article>
  
       
@@ -690,9 +748,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/visualcomputing/showcase/commit/28c5b613768af28f68c12f87494a2bc34c759f94" title='Last modified by Juan Esteban Oviedo | March 11, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/visualcomputing/showcase/commit/f6b755bbe9eb57e4c417a64320b17f76782498ac" title='Last modified by Juan Esteban Oviedo | March 14, 2023' target="_blank" rel="noopener">
       <img src="/showcase/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>March 11, 2023</span>
+      <span>March 14, 2023</span>
     </a>
   </div>
 
@@ -734,6 +792,7 @@ https://github.com/alex-shpak/hugo-book
           <ul>
             <li><a href="#image-kernel-application">Image Kernel Application</a></li>
             <li><a href="#image-histogram">Image Histogram</a></li>
+            <li><a href="#image-lightness">Image Lightness</a></li>
           </ul>
         </li>
       </ul>
