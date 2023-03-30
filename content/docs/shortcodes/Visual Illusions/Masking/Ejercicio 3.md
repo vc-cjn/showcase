@@ -70,7 +70,7 @@ A continuación se toma una imagen del conocido jugador de futbol Vinicius Jr. p
 
 
 {{< details title="Implementacion Kernel de Imagen" open=false >}}
-{{< highlight md >}}
+{{< highlight js >}}
 var img;
 var w = 100;
 let matrix;
@@ -79,7 +79,7 @@ var maxRange = 256
 
 // La funcion preload se ejecuta una unica vez antes de iniciar la funcionalidad de la aplicacion
 function preload() {
-  img = loadImage("/showcase/sketches/vinicius.jpg");
+  img = loadImage("/showcase/sketches/masking/ejercicio3/vinicius.jpg");
 }
 
 // Se prepara un canvas para colocar la imagen 
@@ -205,21 +205,21 @@ function convolution(x, y, matrix, matrixsize, img) {
 {{< /highlight >}}
 {{< /details >}}
 
-{{< p5-iframe sketch="/showcase/sketches/image_kernels.js" width="825" height="525" >}}
+{{< p5-iframe sketch="/showcase/sketches/masking/ejercicio3/image_kernels.js" width="825" height="525" >}}
 
 ### Image Histogram
 
 
 {{< details title="Implementacion Histograma" open=false >}}
-{{< highlight md >}}
+{{< highlight js >}}
 let img
 function preload() {
-  img = loadImage("/showcase/sketches/bmw.jpg"); 
+  img = loadImage("/showcase/sketches/coloring/ejercicio3/bmw.jpg"); 
 }
 
 function mySelectEvent() {
   let item = sel.value();
-  img = loadImage("/showcase/sketches/" + item + ".jpg"); 
+  img = loadImage("/showcase/sketches/coloring/ejercicio3/" + item + ".jpg"); 
 }
 
 function setup() {
@@ -296,7 +296,7 @@ El histograma de imagen es una herramienta muy útil para analizar y comprender 
 
 Además, el histograma de imagen también puede ser utilizado para realizar ajustes en la imagen, como el aumento o disminución del contraste o la luminosidad. Al visualizar la distribución de los niveles de intensidad de los píxeles en el histograma, se pueden identificar los valores de intensidad que necesitan ser ajustados para mejorar la calidad visual de la imagen.
 
-{{< p5-iframe sketch="/showcase/sketches/image_histogram.js" width="625" height="625" >}}
+{{< p5-iframe sketch="/showcase/sketches/masking/ejercicio3/image_histogram.js" width="625" height="625" >}}
 
 ### Image Lightness
 
@@ -305,7 +305,7 @@ La luminosidad de la imagen es una percepción visual que describe el brillo de 
 Para esta solución se plantea el escaneo de todos los pixeles empleando el arreglo pixels. Posteriormente, los valores de RGB existentes dentro de este arreglo se convierten a valores de HSL para luego transformar los valores únicamente del parametro L empleando el slider. Usando el slider se puede variar el parametro de lightness.
 
 {{< details title="Implementacion Lightness" open=false >}}
-{{< highlight md >}}
+{{< highlight js >}}
 let img;
 let r, g, b;
 function preload() {
@@ -367,7 +367,7 @@ function rgbToHsl(r, g, b) {
 Deslizar el slider cambia la luminosidad de la imagen.
 {{< /hint >}}
 
-{{< p5-iframe sketch="/showcase/sketches/image_lightness.js" width="420" height="450" >}}
+{{< p5-iframe sketch="/showcase/sketches/masking/ejercicio3/image_lightness.js" width="420" height="450" >}}
 
 **3. Conclusiones**
 

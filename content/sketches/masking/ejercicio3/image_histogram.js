@@ -1,11 +1,11 @@
 let img
 function preload() {
-  img = loadImage("/showcase/sketches/bmw.jpg"); 
+  img = loadImage("/showcase/sketches/masking/ejercicio3/bmw.jpg"); 
 }
 
 function mySelectEvent() {
   let item = sel.value();
-  img = loadImage("/showcase/sketches/" + item + ".jpg"); 
+  img = loadImage("/showcase/sketches/masking/ejercicio3/" + item + ".jpg"); 
 }
 
 function setup() {

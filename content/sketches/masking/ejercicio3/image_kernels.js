@@ -6,7 +6,7 @@ var maxRange = 256
 
 // La funcion preload se ejecuta una unica vez antes de iniciar la funcionalidad de la aplicacion
 function preload() {
-  img = loadImage("/showcase/sketches/vinicius.jpg");
+  img = loadImage("/showcase/sketches/masking/ejercicio3/vinicius.jpg");
 }
 
 // Se prepara un canvas para colocar la imagen 

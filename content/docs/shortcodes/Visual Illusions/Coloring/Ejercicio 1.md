@@ -17,13 +17,13 @@ A nivel psicológico, el daltonismo puede tener un impacto negativo en la vida c
 
 Ser daltonico, no solo significa ver los colores de forma diferente. De hecho, puede involucrar perderse de información vital dependiendo de la composición de una imagen. A continuación se presenta un ejemplo de ello. 
 
-![Imagen Original]("https://res.cloudinary.com/demo/image/upload/docs/redflower.jpg")
+![Imagen Original](https://res.cloudinary.com/demo/image/upload/docs/redflower.jpg)
 
 Imagen 3: La imagen original
 
 Sin embargo, para una persona con deuteranopia la imagen se vería similar a la siguiente. Evitando casi por completo que se detecte el saltamontes. 
 
-![Imagen con Daltonismo]("https://res.cloudinary.com/demo/image/upload/e_simulate_colorblind/docs/redflower.jpg")
+![Imagen con Daltonismo](https://res.cloudinary.com/demo/image/upload/e_simulate_colorblind/docs/redflower.jpg)
 
 Imagen 2: La información en la imagen parece perderse
 
@@ -46,11 +46,11 @@ Para esto hace uso del matiz, también conocido como tinte o por su nombre en in
 El codigo a continuación se encarga de obtener el color del pixel sobre el cual está ubucado el mouse y en base al mismo calcular el hue usando la función hue() de p5.
 
 {{< details title="Implementacion Texto" open=false >}}
-{{< highlight md >}}
+{{< highlight js >}}
 let img;
 
 function preload() {
-  img = loadImage('/showcase/sketches/redflower.jpg');
+  img = loadImage('/showcase/sketches/coloring/redflower.jpg');
 }
 
 function setup() {
@@ -125,7 +125,7 @@ function draw() {
 {{< /details >}}
 
 {{< details title="Implementacion Audio" open=false >}}
-{{< highlight md >}}
+{{< highlight js >}}
 let img;
 let redAudio;
 let blueAudio;
@@ -135,14 +135,14 @@ let yellowAudio;
 let violetAudio;
 
 function preload() {
-  img = loadImage('/showcase/sketches/redflower.jpg');
+  img = loadImage('/showcase/sketches/coloring/redflower.jpg');
   soundFormats('mp3');
-  redAudio = loadSound("/showcase/sketches/Red.mp3")
-  blueAudio = loadSound("/showcase/sketches/Blue.mp3")
-  orangeAudio = loadSound("/showcase/sketches/Orange.mp3")
-  yellowAudio = loadSound("/showcase/sketches/Yellow.mp3")
-  violetAudio = loadSound("/showcase/sketches/Violet.mp3")
-  greenAudio = loadSound("/showcase/sketches/Green.mp3")
+  redAudio = loadSound("/showcase/sketches/coloring/Red.mp3")
+  blueAudio = loadSound("/showcase/sketches/coloring/Blue.mp3")
+  orangeAudio = loadSound("/showcase/sketches/coloring/Orange.mp3")
+  yellowAudio = loadSound("/showcase/sketches/coloring/Yellow.mp3")
+  violetAudio = loadSound("/showcase/sketches/coloring/Violet.mp3")
+  greenAudio = loadSound("/showcase/sketches/coloring/Green.mp3")
 }
 
 function setup() {
@@ -217,7 +217,7 @@ function mousePressed(){
 
 El resultado desarrollado es el siguiente:
 
-{{< p5-iframe sketch="/showcase/sketches/colorBlindness_sketch.js" width="715" height="530">}}
+{{< p5-iframe sketch="/showcase/sketches/coloring/colorBlindness_sketch.js" width="715" height="530">}}
 
 Otra alternativa que se construyó es una aplicación interactiva que permite a los usuarios explorar y experimentar con los colores de una imagen. Al hacer clic en un punto específico de la imagen, el programa utiliza algoritmos de procesamiento de imágenes para determinar el color del píxel correspondiente a ese punto. Luego, el programa emite un sonido que representa ese color de manera auditiva.
 
@@ -226,7 +226,7 @@ Otra alternativa que se construyó es una aplicación interactiva que permite a 
 Tus altavoces están conectados para poder escuchar los sonidos de la aplicación. Recuerda que funciona al hacer click
 {{< /hint >}}
 
-{{< p5-iframe sketch="/showcase/sketches/colorBlindnessSound.js" width="715" height="530">}}
+{{< p5-iframe sketch="/showcase/sketches/coloring/colorBlindnessSound.js" width="715" height="530">}}
 
 **3. Conclusiones y trabajo a futuro**
 
