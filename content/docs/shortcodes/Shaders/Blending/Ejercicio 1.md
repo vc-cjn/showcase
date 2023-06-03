@@ -260,3 +260,11 @@ void main() {
 ```
 
 {{</details >}}
+
+## Conclusiones
+
+En conclusión, el color blending es una técnica ampliamente utilizada en diversas disciplinas artísticas y aplicaciones cotidianas para crear transiciones suaves entre diferentes colores. Ya sea mediante la mezcla física de pigmentos, la mezcla óptica de puntos de colores o la mezcla digital a través de software, los artistas y diseñadores tienen diferentes métodos a su disposición para lograr combinaciones de colores específicas y efectos visuales impactantes. La elección de la técnica de mezcla depende del efecto deseado y del medio utilizado, y los artistas suelen experimentar con diferentes técnicas para lograr resultados únicos en su trabajo.
+
+En cuanto al blending de color digital, los programas de edición de imágenes ofrecen diferentes modos de mezcla que permiten combinar los valores de los canales de color para generar transiciones suaves entre colores. Estos modos de mezcla, como el modo multiplicar, añadir, superponer y otros, proporcionan resultados visuales distintos y pueden ser utilizados para crear efectos específicos en una imagen. Los modelos de color, como el RGB y el CMYK, son utilizados en estos programas para representar los colores y realizar los cálculos necesarios para el blending. El uso de shaders en aplicaciones gráficas permite implementar estos modos de blending y proporcionar a los usuarios herramientas creativas para mezclar colores y lograr efectos visuales impresionantes en sus proyectos.
+
+En cuanto al trabajo futuro, se podrían explorar nuevas técnicas de blending y modos de mezcla para ampliar aún más las posibilidades creativas en el color blending. También se podría investigar la aplicación del color blending en otros campos, como la realidad virtual o la impresión en 3D, para descubrir cómo esta técnica puede ser utilizada de formas innovadoras. Además, se podría desarrollar software más intuitivo y accesible que facilite el proceso de mezcla de colores para artistas y diseñadores, brindándoles herramientas más avanzadas y opciones personalizables. En resumen, el color blending sigue siendo un área en constante evolución que ofrece un gran potencial para la expresión artística y la creación visual, y hay muchas oportunidades para explorar y expandir sus aplicaciones en el futuro.

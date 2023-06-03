@@ -304,3 +304,15 @@ void main() {
 }
 ```
 {{</details >}}
+
+## Conclusiones 
+
+En conclusión, el texturizado procedural es una técnica poderosa y versátil en el ámbito de los gráficos por computadora y el diseño digital. Permite generar texturas de forma automática utilizando algoritmos y reglas predefinidas en lugar de depender de imágenes o fotografías como fuente de textura. Esto proporciona numerosas ventajas, como flexibilidad, escalabilidad y parametricidad en la creación de texturas.
+
+El proceso de texturizado procedural se basa en la generación de patrones y estructuras repetitivas utilizando funciones matemáticas y algoritmos. Los componentes fundamentales, como el ruido, los fractales, las transformaciones y operadores, y las funciones matemáticas, permiten controlar y ajustar diferentes características de la textura, como color, forma, detalle y distribución de elementos.
+
+Una de las principales ventajas de esta técnica es su capacidad para generar texturas no repetitivas y escalables. Al ser generadas mediante algoritmos, las texturas pueden adaptarse a cualquier tamaño sin pérdida de calidad. Además, al ser paramétricas, pueden modificarse fácilmente según las necesidades del proyecto.
+
+En el ejercicio presentado, se implementaron dos patrones de texturizado procedural: Mosaic y Chromatic Aberration. El uso de estos patrones demostró la aplicabilidad de esta técnica en la generación de texturas realistas y visualmente interesantes. Los objetos generados aleatoriamente y en movimiento cíclico mostraron la flexibilidad y dinamismo que se puede lograr con el texturizado procedural.
+
+Como trabajo futuro, se podrían explorar otras técnicas y patrones de texturizado procedural para ampliar las opciones disponibles. Además, se podría investigar la combinación de diferentes algoritmos y funciones matemáticas para generar efectos aún más complejos y variados en las texturas. También sería interesante explorar cómo aplicar el texturizado procedural en otros contextos, como realidad virtual, realidad aumentada o simulaciones físicas, para crear entornos más inmersivos y realistas. En resumen, el texturizado procedural tiene un gran potencial y sigue siendo un campo de estudio en evolución en el ámbito de los gráficos por computadora y el diseño digital.

@@ -140,3 +140,9 @@ void main() {
 }
 ```
 {{</details >}}
+
+## Conclusiones 
+
+En conclusión, los fotomosaicos digitales son imágenes compuestas por una colección de pequeñas imágenes llamadas teselas, que se seleccionan cuidadosamente para representar áreas específicas de la imagen objetivo. El proceso de creación de un fotomosaico implica la colección de imágenes, la división de la imagen objetivo en celdas, la selección de teselas que se asemejen visualmente a cada área y la composición progresiva del fotomosaico mediante el reemplazo de las áreas correspondientes de la imagen objetivo con las teselas seleccionadas. Los fotomosaicos digitales son visualmente atractivos y detallados, ya que están compuestos por una gran cantidad de imágenes pequeñas que aportan variedad y detalles a la imagen final. Existen diferentes técnicas y algoritmos para crear fotomosaicos, y los programas de edición de imágenes ofrecen herramientas específicas para simplificar el proceso y ajustar los parámetros necesarios.
+
+En cuanto al trabajo futuro, se podría investigar y desarrollar algoritmos más sofisticados para la selección de teselas, utilizando técnicas de reconocimiento de patrones y aprendizaje automático para lograr una mayor coherencia visual en el fotomosaico. También se podrían explorar nuevas formas de dividir la imagen objetivo en celdas, utilizando formas no tradicionales o algoritmos adaptativos que se ajusten a las características de la imagen. Además, se podría investigar la posibilidad de crear fotomosaicos en tiempo real, utilizando tecnologías como la realidad aumentada o la realidad virtual para generar composiciones interactivas y dinámicas. En resumen, el campo de los fotomosaicos digitales ofrece muchas oportunidades para la innovación y la creatividad, y hay un amplio espacio para el desarrollo de nuevas técnicas y aplicaciones en el futuro.

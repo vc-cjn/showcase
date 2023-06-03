@@ -118,3 +118,11 @@ function handleFile(file) {
 
 ```
 {{</details >}}
+
+## Conclusiones 
+
+En conclusión, en este ejercicio se presentaron dos implementaciones de pixelación de imágenes: una utilizando coherencia espacial y otra utilizando el promedio de colores. La implementación basada en coherencia espacial toma en cuenta la ubicación de los texeles y asume que el color de cada texel será cercano a los colores de los texeles que se mapean a la misma coordenada, lo cual puede resultar en una imagen pixelada con cierto grado de detalle. Por otro lado, la implementación que utiliza el promedio de colores pinta cada pixel de baja resolución con el promedio de los colores de los pixeles que se encuentran en la misma sección, lo cual puede generar una apariencia de desenfoque o convolución.
+
+Al comparar ambas implementaciones, se observa que no hay una diferencia significativa en los colores utilizados en los pixeles de baja resolución. Sin embargo, la implementación basada en coherencia espacial puede presentar un poco más de detalle en la imagen pixelada, mientras que la implementación que utiliza el promedio de colores puede dar la sensación de un efecto de desenfoque.
+
+En cuanto al trabajo futuro, se podrían explorar otras técnicas de pixelación que utilicen diferentes algoritmos o enfoques para obtener resultados distintos. También sería interesante investigar cómo mejorar la implementación de coherencia espacial para lograr una mayor precisión en la selección de colores basados en la ubicación de los texeles. Además, se podría experimentar con combinaciones de diferentes técnicas de pixelación para obtener efectos personalizados y creativos. En resumen, la pixelación es un campo en el que se pueden explorar diversas técnicas y enfoques para lograr resultados visuales interesantes, y existe un amplio espacio para la investigación y la experimentación en este campo.
