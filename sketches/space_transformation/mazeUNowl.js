@@ -429,7 +429,7 @@ function draw() {
   }
   //orbitControl();
   push();
-  //directionalLight(250, 250, 250, sunX, sunY, sunZ);
+  directionalLight(250, 250, 250, sunX, sunY, sunZ);
   
   ground.update();
   ground2.update();
