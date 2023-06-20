@@ -386,7 +386,7 @@ function draw() {
   // Configuramos la luz para que apunte hacia el origen desde la posición del Sol
   if (sunLightActive) {
     // Configuramos la luz para que apunte hacia el origen desde la posición del Sol
-    let lightIntensity = sunY > 0 ? 0 : 255;
+    let lightIntensity = sunY > 0 ? 50 : 255;
     directionalLight(lightIntensity, lightIntensity, lightIntensity, -sunX, -sunY, -sunZ);
   } else {
     // Configuramos las luces direcciones alternativas
